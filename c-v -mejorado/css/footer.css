@@ -1,0 +1,70 @@
+footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    background-color: black;
+    flex: 0 0 auto;
+}
+
+.foot {
+    display: flex;
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+    justify-content: space-around;
+    background-color: rgb(15, 147, 199);
+}
+
+.contactodelfooter, .menu_footer {
+    flex: 2 1 auto;
+}
+
+.redessocialesfoter {
+    display: flex;
+    flex-direction: column;
+    flex: 5 1 auto;
+}
+ 
+
+.foot img {
+    height: 100%;
+    width: 130px;
+    margin: 0px 20px;
+}
+
+.foot ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.foot a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    color: rgb(141, 141, 141);
+    margin: 5px 0px;
+}
+
+footer i {
+    font-size: 30px;
+}
+
+.redessocialesfoter ul {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.redessocialesfoter li {
+    margin: 10px 25px;
+}
+
+.mapafotel ul{
+    display: flex;
+    flex-wrap: wrap
+}
+.mapafotel li{
+    margin: 10px 25px;
+}
