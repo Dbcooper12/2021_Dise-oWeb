@@ -1,0 +1,39 @@
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+
+    grid-template-areas:"my-header" "my-nav" "my-section""my-asede" "my-footer" ;
+    grid-template-columns: 300px 200px 300px;
+    grid-template-rows: 100px 50px  1fr 100px 50px;
+}
+
+header{
+    grid-area: my-header;
+    background-color: blue;
+
+}
+nav{
+    grid-area: my-nav;
+    background-color: green;
+}
+section{
+    grid-area: my-section;
+    background-color: red;
+}
+aside{
+    grid-area: my-asede;
+    background-color: orange;
+}
+
+footer{
+    grid-area: my-footer;
+    background-color: yellow;
+}
+
+@media(min-width:600px) and (max-width:100px){
+.grid{
+    grid-template-columns: 30% 70%;
+    grid-template-areas:"my-header" "my-nav" "my-nav my nav""my-asede" "my section" "my-footer" ;
+    grid-template-rows: 105px 50px  1fr 100px ;
+}
+}
