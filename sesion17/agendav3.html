@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi agenda de datos</title>
+    <link rel="stylesheet" href="css/agendav3.css">
+</head>
+<body onload="actualizarDatos()" class="contenedorP">
+ 
+
+
+<div id="contenedor">
+    <header>
+    <h3> Mi agenda de contactos</h3>
+    <hr>
+</header>
+ <fieldset>
+     <form  >
+    <h3>Nombre</h3>
+    <input type="text" name="nombre" id="nombre" placeholder="Nombres" > 
+    <h3> Numero de celular </h3>
+    <input type="text" name="movil" id="movil" placeholder="numero" >  
+    <h3> Email </h3>
+    <input type="text" name="email" id="email" placeholder="email" >  
+    
+</form>
+<hr/>
+<div>
+    <input type="button" onclick="guardarDatos()" value="Guardar datos">
+    <input type="button"  onclick="recuperarDatos()" value="Recuperar datos">
+    <input type="button"  onclick="EliminarDatos()" value="Eliminar">
+    <input type="button"  onclick="EliminarTodosDatos()" value="Eliminar Todos">
+</div>
+</fieldset>
+<div> 
+<span class="titu"> Nombre </span><span class="titu"> Celular </span><span class="titu"> Email </span> <br>
+<p id="contactos">  </p>
+</div>
+</div>    
+</div>
+<script type="text/javascript" src="js/agendav3.js"></script>
+ 
+    
+</body>
+</html>
