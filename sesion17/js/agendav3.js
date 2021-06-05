@@ -1,29 +1,21 @@
-function guardarDatos(){
-    const nombre =document.getElementById("nombre").value;
-    const movil=document.getElementById("movil").value;
-    const email=document.getElementById("email").value;
-   
-   const datos ={
-    '.':  movil,
-        '':  email,
-    }
-    
-    localStorage.setItem(nombre,JSON.stringify(datos));
+ 
 
-  document.getElementById("nombre").value ="";
-  document.getElementById("movil").value ="";
-  document.getElementById("email").value ="";
-    
+function guardarDatos(){
+    var  nombre =document.getElementById("nombre").value, 
+        movil=document.getElementById("movil").value
+        ,email=document.getElementById("email").value;
+      var datos ={
+          'movil': movil,
+         'email' : email
+      }
+
+localStorage.setItem(nombre,JSON.stringify(datos));
+ 
 }
+
 function recuperarDatos(){
-    var nombre = document.getElementById("nombre").value;
-    localStorage.getItem(nombre);
-    var movil = document.getElementById("movil").value;
-    localStorage.getItem(movil);
-    var email = document.getElementById("email").value;
-    localStorage.getItem(email);
-    //document.getElementById("movil").value = localStorage.getItem(nombre);  
-    actualizarDatos();    
+   
+   actualizarDatos();    
 }
 function EliminarDatos(){
     var nombre = document.getElementById("nombre").value;
@@ -43,8 +35,8 @@ function actualizarDatos(){
     }else{
         for(var i=0; i<= localStorage.length -1; i++){
             var key = localStorage.key(i);
-            registro +='<li>'+ '<span class="nom">'+ key + '</span>'
-            +'<span class= "nom">'+ localStorage.getItem(key)+ '</span></li>' + ' <br><br>';
+            registro +='<li>'+ '<span class="nom">'+ key + '</span></li>'
+            +'<span class= "nom">'+ localStorage.getItem(key)+ '</span>' + ' <br>';
         }
     }
     document.getElementById('contactos').innerHTML = registro;
